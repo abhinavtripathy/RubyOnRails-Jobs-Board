@@ -12,6 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2019_04_06_061718) do
 
+  create_table "categories", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "jobs", force: :cascade do |t|
     t.string "title"
     t.text "description"
